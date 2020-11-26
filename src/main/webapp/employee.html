@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Details</title>
+</head>
+<body>
+	<div align="centre">
+		<h1>Employee List</h1>
+		<table border="1" cellpadding="10"></table>
+		<tbody>
+			<tr th:each="Employee : ${employees}">
+			<td th:text=$Employee.Id>Id</td>
+			<td th:text=$Employee.Name>Name</td>
+			<td th:text=$Employee.Salary>Salary</td>
+			<td th:text=$Employee.Age>Age</td>
+			<td th:text=$Employee.Gender>Gender</td>
+			</tr>
+		</tbody>
+	</div>
+
+</body>
+</html>
